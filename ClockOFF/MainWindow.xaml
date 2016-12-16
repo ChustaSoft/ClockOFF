@@ -1,0 +1,16 @@
+﻿<Window x:Class="ClockOFF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClockOFF"
+        mc:Ignorable="d"
+        Title="ClockOFF" Height="130" Width="250.883" Opacity="0.5" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,3.4,14.2" RenderTransformOrigin="4,0">
+        <RadioButton x:Name="rbTimed" Content="Programado" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="typeProgramming" Checked="TypeProgrammingChanged" />
+        <RadioButton x:Name="rbCrono" Content="Cuenta atrás" HorizontalAlignment="Left" Margin="121,10,-52.2,0" VerticalAlignment="Top" GroupName="typeProgramming" Checked="TypeProgrammingChanged" />
+        <ComboBox x:Name="cbTimeSelector" HorizontalAlignment="Left" Margin="55,45,0,0" VerticalAlignment="Top" Width="120" />
+        <Button x:Name="btSend" Content="OK" HorizontalAlignment="Left" Height="22" Margin="10,81,0,0" VerticalAlignment="Top" Width="100" Click="SendSelectionToMachine"/>
+        <Button x:Name="btClose" Content="Cerrar" HorizontalAlignment="Left" Height="22" Margin="138,81,0,0" VerticalAlignment="Top" Width="100" Click="CloseWindow" />
+    </Grid>
+</Window>
